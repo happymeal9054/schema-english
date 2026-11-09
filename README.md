@@ -2,7 +2,11 @@
 
 > 개개인의 수준에 따라 부족한 부분만 반복 학습하는 맞춤 학습 앱 (2026-2 영어독해연습 1조)
 
-## 실행 방법
+## 바로 사용하기 (인터넷 주소)
+- **전체 기능 버전 (마이크 · 발음 점수 · 알림 포함):** https://happymeal9054.github.io/schema-english/ — Chrome/Edge 권장
+- **Claude AI 연결 버전 (AI 첨삭 · AI 지문 생성):** https://claude.ai/artifact/Gt1csNKVxFsKazANWHPvby — claude.ai 로그인 필요, 마이크 기능 없음
+
+## 실행 방법 (내 컴퓨터에서)
 - **가장 간단한 방법:** `index.html`을 **Chrome 또는 Edge**로 열기 (더블클릭).
 - 마이크(발음 점수·녹음)를 쓰려면 로컬 서버로 여는 것이 가장 안정적입니다:
   ```
