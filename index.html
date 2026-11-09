@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>스키마 · 맞춤 영어독해 학습</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#home" data-nav="home">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="var(--accent)"/><path d="M10 11h12M10 16h8M10 21h10" stroke="var(--on-accent)" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span><b>스키마</b><small>Schema · 맞춤 영어독해</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" data-nav="home"><span class="ico">⌂</span><span>홈</span></a>
+        <a href="#vocab" data-nav="vocab"><span class="ico">Aa</span><span>Vocabulary<small>단어</small></span></a>
+        <a href="#listening" data-nav="listening"><span class="ico">♪</span><span>Listening<small>듣기</small></span></a>
+        <a href="#speaking" data-nav="speaking"><span class="ico">◉</span><span>Speaking<small>말하기</small></span></a>
+        <a href="#grammar" data-nav="grammar"><span class="ico">¶</span><span>Grammar<small>문법</small></span></a>
+        <a href="#reading" data-nav="reading"><span class="ico">≡</span><span>Reading<small>독해</small></span></a>
+        <a href="#mylearning" data-nav="mylearning"><span class="ico">★</span><span>My Learning<small>학습 결과·오답</small></span><em class="badge" id="dueBadge" hidden></em></a>
+      </nav>
+      <p class="side-foot">2026-2 영어독해연습 · 1조</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <label class="passage-pick">
+          <span>학습 지문</span>
+          <select id="passageSelect"></select>
+        </label>
+        <div id="reminderBanner" class="banner" hidden></div>
+      </header>
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="passages.js"></script>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
